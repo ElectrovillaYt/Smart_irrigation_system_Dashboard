@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Irrigation System Dashboard</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Smart Irrigation System Dashboard</h1>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="data-container">
+            <div class="data-card1">
+                <h2>Soil Moisture</h2>
+                <p id="soilMoisture">{{moisture_data}}%</p>
+            </div>
+            <div class="data-card2">
+                <h2>Temperature</h2>
+                <p id="temperature_C">{{temperature_data_C}}°C</p>
+                <p id="temperature_F">{{(temperature_data_C* 9 / 5) + 32}}°F</p>
+            </div>
+            <div class="data-card3">
+                <h2>Humidity</h2>
+                <p id="humidity">{{humidity_data}}%</p>
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <div class='btn1'>
+            <p id="btn1_txt">Auto Mode</p>
+            <input type="checkbox" id="Mode_Switch" class="toggle-checkbox">
+            <label for="Mode_Switch" class="toggle-label"></label>
+        </div>
+        <div class='btn2'>
+            <p id="btn2_txt">Pump</p>
+            <input type="checkbox" id="Pump" class="toggle-checkbox">
+            <label for="Pump" class="toggle-label"></label>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li>
+                <div class="about">
+
+                    <a class="link" href="https://smart-irrigation-system.onrender.com/about" target="_parent">About</a>
+                    <?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="20px"
+                        height="20px" style='color:white'>
+                        <path
+                            d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M16,21h-2v-7h2V21z M15,11.5 c-0.828,0-1.5-0.672-1.5-1.5s0.672-1.5,1.5-1.5s1.5,0.672,1.5,1.5S15.828,11.5,15,11.5z" />
+                    </svg>
+                </div>
+            </li>
+            <li>
+                <div class="yt">
+                    <a class="link" href="https://www.youtube.com/@ElectroVilla" target="_blank">Visit YouTube
+                        Channel</a>
+                    <img class="yt_logo" src="static/assets/yt.jpg" alt="img" height="20px" width>
+                </div>
+            </li>
+        </ul>
+    </footer>
+    <script src="static/script.js"></script>
+</body>
+
+</html>
