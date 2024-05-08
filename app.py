@@ -39,13 +39,13 @@ def receive_humidity():
        return str(humidity_data)
 
 @app.route('/')
-
 def display_web():
     global temperature_data
     global moisture_data
     global humidity_data
     return render_template('index.html', moisture_data = moisture_data, temperature_data_C = temperature_data, humidity_data = humidity_data)
-   
+
+
 @app.route("/about")
 def about_page():
    return render_template('about.html')
