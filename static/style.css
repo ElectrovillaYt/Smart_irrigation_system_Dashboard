@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,19 +17,20 @@ body {
     border: 1px solid #ccc;
     border-radius: 10px;
     position: relative;
-    z-index: 2;
+    z-index: 1;
     box-shadow: 1px 1px 1px;
 }
 
 nav {
     background-color: #3b8741;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 5;
 }
 
 h1 {
+    padding: 6px;
     text-align: center;
     font-size: xx-large;
     color: aliceblue;
