@@ -1,7 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -10,8 +6,8 @@ body {
 }
 
 .container {
-    top: 140px;
-    max-width: 800px;
+    top: 15vh;
+    max-width: 80vw;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -30,7 +26,8 @@ nav {
 }
 
 h1 {
-    padding: 6px;
+    margin-top: 0px;
+    padding: 5px;
     text-align: center;
     font-size: xx-large;
     color: aliceblue;
@@ -89,7 +86,7 @@ h1 {
 .btn1 {
     position: relative;
     z-index: 2;
-    bottom: -200px;
+    bottom: -180px;
     display: flex;
 }
 
@@ -107,7 +104,7 @@ h1 {
 .btn2 {
     position: relative;
     z-index: 2;
-    bottom: -200px;
+    bottom: -180px;
     display: flex;
 }
 
